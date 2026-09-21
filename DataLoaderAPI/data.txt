@@ -1,0 +1,44 @@
+ID,Work Item Type,Title,Assigned To,State,Tags
+93349,User Story,Intramonth Data Capture Object creation + Associated Screens,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Intramonth Data Capture- Both; Refined; SAMs Team; STAC Billing Milestone 3
+100763,User Story,Add Intramonth Data Capture to Contract Layout Related List,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,No UAT Needed; Refined; SAMs Team; STAC Billing Milestone 3
+102928,User Story,Intramonth Data Capture Screen - UI - Should be deployed with or After 93349,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,STAC Billing Milestone 4; Technical Debt
+102934,User Story,Intramonth Data Capture Screen - Bugs - Should be deployed with or After 93349,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Bug; Regression; STAC Billing Milestone 4
+103031,User Story,Additional Intramonth Data Capture UI Enhancements - Should be deployed with or after 93349,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Low Priority; STAC Billing Milestone 4; Technical Debt
+103052,User Story,Salesforce API: Return OFO Volume Records for a Bill Batch Entry,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 4
+103053,User Story,Salesforce API: Return Swing and Turnback Volume Records for a Bill Batch Entry,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 4
+103102,User Story,Create Operational Order Management Permission Set in Salesforce,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,No UAT Needed; SAMs Team; STAC Billing Milestone 5
+103262,User Story,Strategic Account Portal – Mobile View for Home Page Welcome Banner- should be deployed with 103261,Chinmay Patil <GAS02818@gassouth.com>,Pending Deployment,No UAT Needed; Refined; SAMs Team; STAC Billing Milestone 5
+106694,User Story,Intramonth Data Capture – Enable Price Field Editing for Pricing Types GDD & IFERC,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; SAMs Team; STAC Billing Milestone 3
+109192,User Story,Add Intramonth Data Capture and Contract Extra Billing Charges Related Lists to the Sales Contract Layout,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 4
+114293,User Story,Update Greeting to Use Account Name,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,No UAT Needed; SAMs Team; STAC Billing Milestone 5
+116053,User Story,"Enable ""Both"" Option for Tolerance and Conditional Editing of Short/Long % Fields in LDC Operational Order",Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Refined; SAMs Team; STAC Billing Milestone 4
+116095,User Story,Creation of Customer Decision Records for Days Created by Extended Operational Order,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Refined; SAMs Team; STAC Billing Milestone 4
+116128,User Story,Customer Decision – Auto-Population of Contracted Entity and Expiration Date,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Refined; SAMs Team; STAC Billing Milestone 4
+116257,User Story,Salesforce API: Return Tier Records for one or more Bill Batch Entry IDs,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,Ready for Refinement; Requirements Pending; STAC Billing Milestone 4
+117525,User Story,Update Background Color of Strategic Portal Components to Grey,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,No UAT Needed; Refined; SAMs Team; STAC Billing Milestone 6
+117939,User Story,Enhance Intramonth Data Capture Date Range to Support Up to Full Month,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; Ready for Refinement; SAMs Team; STAC Billing Milestone 4
+118060,User Story,Add OFO BSI Fields + OFO Index Mapping for GDD-Priced Intramonth Data Capture Records,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 4
+118151,User Story,Separate Price and Adder Fields in Intramonth Data Capture (LDC Details),Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; Refined; SAMs Team; STAC Billing Milestone 4
+118355,User Story,Remove IFERC Pricing Type from Intramonth Data Capture,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; Ready for Refinement; SAMs Team; STAC Billing Milestone 4
+118527,User Story,Remove Start_Date_Cannot_Be_Past Validation Rule from Intramonth Data Capture Object,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,SAMs Team; STAC Billing Milestone 4
+118597,User Story,Salesforce API: Add OFO Boolean Field to OFO Volume API Response,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,Change Request; Ready for Refinement; STAC Billing Milestone 4
+118659,User Story,Update Burn Validation Call to Include Additional Parameters,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 4
+121127,User Story,Default Pricing Type to Contracted Rate and Reorder Pricing Type Values,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; Ready for Refinement; SAMs Team; STAC Billing Milestone 4
+121252,User Story,Salesforce - Update Initial Bill Generation Payload to Include TSP Abbreviation and Account Number,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,No Testing Needed; STAC Billing Milestone 4
+121429,User Story,Update Swing and Turnback API to Return Daily Aggregated Values,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 4
+121433,User Story,"Update OFO Volume API Billing Response for Conditional Population of Price, Index, Adder, and UOM Fields",Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 4
+121553,User Story,"Add Conditional Required ""Index Product"" Picklist for GDD Pricing Type",Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; Refined; SAMs Team; STAC Billing Milestone 4
+121790,User Story,Handle Zero and Missing Baseload/Firm Volume Values in Gorilla Integration,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+121845,User Story,Fix Extend Order Modal to Display Current End Date and Extended Date Without Page Refresh,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 5
+122014,User Story,Convert Turnback Transaction Volumes to Negative Values in Salesforce OFO API and Swing&Turnback API,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,No Testing Needed; STAC Billing Milestone 4
+122016,User Story,"Fix ""Select All"" Functionality to Include All Paginated Contracts in New Bill Batch Creation",Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 4
+122229,User Story,Update Billing API Burn Validation Route from api/usage/validate to api/verify/burns,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 4
+122400,User Story,"Include ""Pending Enrollment"" Contracts in STAC Contract Selection Processes",Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,No UAT Needed; Ready for Refinement; SAMs Team; STAC Billing Milestone 5; Technical Debt
+122521,User Story,Portal-Specific Username Suffixing for Unique Experience Cloud Authentication,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,No UAT Needed; Refined; STAC Billing Milestone 5
+122657,User Story,User Details API - Return Daily FirmVolume Instead of Monthly FirmVolume,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+122687,User Story,Cancel Associated Billing Records When Bill Batch QA Fails,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+122700,User Story,Remove Billing Engine and Upload Template Filters from New Bill Batch Process,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+122863,User Story,New Edge Cases in the User Details API,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123092,User Story,Contract Dropdown Enhancement to Include Recently Expired Contracts in Intramonth Data Capture,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,No UAT Needed; SAMs Team; STAC Billing Milestone 4
+123331,User Story,Enhance Service Point Validation and Account Number Derivation Based on Transporter Configuration,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123649,User Story,Salesforce: Update Salesforce Billing Initiate API Call to Include Bill Type,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
