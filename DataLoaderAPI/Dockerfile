@@ -3,13 +3,13 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 
 WORKDIR /src
 
-COPY ["CsvDataProvider.csproj", "./"]
+COPY ["DataLoaderAPI.csproj", "./"]
 
-RUN dotnet restore "CsvDataProvider.csproj"
+RUN dotnet restore "DataLoaderAPI.csproj"
 
 COPY . .
 
-RUN dotnet publish "CsvDataProvider.csproj" \
+RUN dotnet publish "DataLoaderAPI.csproj" \
     -c Release \
     -o /app/publish \
     /p:UseAppHost=false
@@ -26,4 +26,4 @@ EXPOSE 8080
 
 ENV ASPNETCORE_URLS=http://+:8080
 
-ENTRYPOINT ["dotnet", "CsvDataProvider.dll"]
+ENTRYPOINT ["dotnet", "DataLoaderAPI.dll"]
