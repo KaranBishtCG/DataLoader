@@ -42,3 +42,60 @@ ID,Work Item Type,Title,Assigned To,State,Tags
 123092,User Story,Contract Dropdown Enhancement to Include Recently Expired Contracts in Intramonth Data Capture,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,No UAT Needed; SAMs Team; STAC Billing Milestone 4
 123331,User Story,Enhance Service Point Validation and Account Number Derivation Based on Transporter Configuration,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
 123649,User Story,Salesforce: Update Salesforce Billing Initiate API Call to Include Bill Type,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123650,User Story,Add Contract Validation Summary to Billing Review Screen,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 4
+123651,User Story,Update Account Search to Support Partial Account Number Matching,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,SAMs Team; STAC Billing Milestone 4
+123652,User Story,Add Loading Indicator During Bill Batch Processing,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,No UAT Needed; Refined
+123653,User Story,Improve Error Message for Invalid Contract Selection,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,Refined; Technical Debt
+123654,User Story,Add Contract Status to Billing Selection Grid,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123655,User Story,Update Bill Batch Entry Details Layout,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 5
+123656,User Story,Add Validation for Missing Transporter Configuration,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Technical Debt; Refined
+123657,User Story,Update Intramonth Data Capture Save Validation,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; STAC Billing Milestone 4
+123658,User Story,Add Billing Period Information to Contract Details,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,SAMs Team; Refined
+123659,User Story,Update User Details API Response Mapping,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123660,User Story,Improve Pagination Handling in Contract Selection,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Refined; Technical Debt
+123661,User Story,Add Account Name Filter to Billing Records,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 4
+123662,User Story,Update Billing Record Error Handling,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,No Testing Needed; Refined
+123663,User Story,Add Confirmation Message After Successful Bill Batch Creation,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,No UAT Needed; SAMs Team
+123664,User Story,Update Contract Expiration Date Display,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 5
+123665,User Story,Add Additional Fields to Bill Batch Entry Screen,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123666,User Story,Improve Search Performance for Strategic Account Portal,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Technical Debt; STAC Billing Milestone 5
+123667,User Story,Update Contract Dropdown Sorting Logic,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,Ready for Refinement; SAMs Team
+123668,User Story,Add Validation for Duplicate Bill Batch Entries,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 4
+123669,User Story,Update Billing API Timeout Handling,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,Technical Debt; STAC Billing Milestone 4
+123670,User Story,Add Daily Volume Summary to Bill Batch Screen,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 4
+123671,User Story,Improve Mobile Layout for Contract Details,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,SAMs Team; STAC Billing Milestone 5
+123672,User Story,Add User Friendly Message for Empty Search Results,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,No UAT Needed; Refined
+123673,User Story,Update Bill Batch Status After QA Completion,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123674,User Story,Add Sorting Support to Billing Records Table,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 4
+123675,User Story,Update Account Validation for Inactive Accounts,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,Refined; SAMs Team
+123676,User Story,Add Contract Number to Billing API Request,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123677,User Story,Improve Error Logging for Salesforce API Integrations,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Technical Debt; Refined
+123678,User Story,Update Intramonth Data Capture Field Labels,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; Refined
+123679,User Story,Add Bill Type Filter to Billing Selection Screen,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123680,User Story,Update Contract Selection to Preserve User Filters,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 5
+123681,User Story,Add Retry Handling for Failed Billing API Calls,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,Technical Debt; STAC Billing Milestone 4
+123682,User Story,Add Transporter Abbreviation to Billing Response,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 4
+123683,User Story,Update Strategic Portal Welcome Component,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,SAMs Team; STAC Billing Milestone 5
+123684,User Story,Add Validation for Required Billing Period,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,No UAT Needed; Refined
+123685,User Story,Update Bill Batch Creation Confirmation Screen,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123686,User Story,Add Contract Type to Contract Search Results,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Refined; SAMs Team
+123687,User Story,Improve API Response Validation for Billing Services,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,Technical Debt; Ready for Refinement
+123688,User Story,Add Loading State to Intramonth Data Capture Modal,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; Refined
+123689,User Story,Update Bill Batch Entry API Payload,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123690,User Story,Add Validation for Duplicate Contract Selection,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,Refined; SAMs Team
+123691,User Story,Improve Contract Dropdown Search Performance,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,Technical Debt; STAC Billing Milestone 4
+123692,User Story,Add Bill Batch Creation Audit Information,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 5
+123693,User Story,Update Billing Records Table Empty State,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,No UAT Needed; Refined
+123694,User Story,Add Additional Validation to Operational Order Creation,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123695,User Story,Update Customer Decision Record Processing,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 4
+123696,User Story,Add Error Details to Failed Bill Batch Records,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,Technical Debt; Refined
+123697,User Story,Improve Salesforce API Request Logging,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,STAC Billing Milestone 5
+123698,User Story,Add Account Number to Strategic Portal Header,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,SAMs Team; No UAT Needed
+123699,User Story,Update Bill Batch QA Validation Messages,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 4
+123700,User Story,Add Support for Additional Billing Status Values,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Ready for Refinement; STAC Billing Milestone 4
+123701,User Story,Improve Intramonth Data Capture Date Validation,Madhu Gangaiah <GAS02833@gassouth.com>,Pending Deployment,Intramonth Data Capture- Account Modal; Refined
+123702,User Story,Update Billing API Error Response Handling,Mayank Aggarwal <GAS02801@gassouth.com>,Pending Deployment,Technical Debt; STAC Billing Milestone 4
+123703,User Story,Add Contract Selection Summary to Bill Batch Screen,Diwaker Pragesh <GAS02800@gassouth.com>,Pending Deployment,Refined; STAC Billing Milestone 5
+123704,User Story,Update User Details API Field Mapping,Matthew Goldman <GAS02732@gassouth.com>,Pending Deployment,STAC Billing Milestone 4
+123705,User Story,Add Validation for Missing Account Number,Dipanshu Singh <GAS02779@gassouth.com>,Pending Deployment,No UAT Needed; Refined
+123706,User Story,Improve Billing Record Processing Performance,Jay Yadav <GAS02888@gassouth.com>,Pending Deployment,Technical Debt; STAC Billing Milestone 4

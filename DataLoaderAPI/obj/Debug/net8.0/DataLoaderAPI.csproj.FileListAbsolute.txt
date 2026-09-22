@@ -145,3 +145,5 @@ C:\Users\KaranSinghBisht\source\repos\DataLoaderAPI\DataLoaderAPI\obj\Debug\net8
 C:\Users\KaranSinghBisht\source\repos\DataLoaderAPI\DataLoaderAPI\obj\Debug\net8.0\DataLoaderAPI.pdb
 C:\Users\KaranSinghBisht\source\repos\DataLoaderAPI\DataLoaderAPI\obj\Debug\net8.0\DataLoaderAPI.genruntimeconfig.cache
 C:\Users\KaranSinghBisht\source\repos\DataLoaderAPI\DataLoaderAPI\obj\Debug\net8.0\ref\DataLoaderAPI.dll
+C:\Users\KaranSinghBisht\source\repos\DataLoaderAPI\DataLoaderAPI\bin\Debug\net8.0\data.txt
+C:\Users\KaranSinghBisht\source\repos\DataLoaderAPI\DataLoaderAPI\obj\Debug\net8.0\DataLoaderAPI.sourcelink.json
