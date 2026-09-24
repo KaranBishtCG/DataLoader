@@ -1,5 +1,6 @@
 ﻿
 using CsvHelper;
+using CsvHelper.Configuration;
 using DataLoaderAPI.Models;
 using DataLoaderAPI.Repositories.Interfaces;
 using Microsoft.AspNetCore.Hosting;
@@ -32,7 +33,13 @@ namespace DataLoaderAPI.Repositories
             
             using var reader = new StreamReader(_filepath);
 
-            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+            var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                Delimiter = "\t",
+                HasHeaderRecord = false
+            };
+
+            using var csv = new CsvReader(reader, csvConfig);
 
             csv.Context.RegisterClassMap<WorkItemMap>();
 

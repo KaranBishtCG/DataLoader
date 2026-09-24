@@ -1,4 +1,5 @@
 ﻿using CsvHelper;
+using CsvHelper.Configuration;
 using DataLoaderAPI.Models;
 using DataLoaderAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -40,13 +41,19 @@ namespace DataLoaderAPI.Controllers
 
             using var memoryStream = new MemoryStream();
 
+            var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                Delimiter = "\t",
+                HasHeaderRecord = false
+            };
+
             using (var writer = new StreamWriter(
                 memoryStream,
                 Encoding.UTF8,
                 leaveOpen: true))
             using (var csv = new CsvWriter(
                 writer,
-                CultureInfo.InvariantCulture))
+                csvConfig))
             {
                 csv.Context.RegisterClassMap<WorkItemMap>();
 

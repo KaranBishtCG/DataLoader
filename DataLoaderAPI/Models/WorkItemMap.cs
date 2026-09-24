@@ -6,12 +6,10 @@ namespace DataLoaderAPI.Models
     {
         public WorkItemMap()
         {
-            Map(m => m.ID).Name("ID");
-            Map(m => m.WorkItemType).Name("Work Item Type");
-            Map(m => m.Title).Name("Title");
-            Map(m => m.AssignedTo).Name("Assigned To");
-            Map(m => m.State).Name("State");
-            Map(m => m.Tags).Name("Tags");
+            Map(m => m.AccountName).Index(0);
+            Map(m => m.AccountNumber).Index(1);
+            Map(m => m.BrandCode).Index(2);
+            Map(m => m.BrandName).Index(3);
         }
     }
 }
