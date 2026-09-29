@@ -43,7 +43,7 @@ namespace DataLoaderAPI.Controllers
 
             var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                Delimiter = "\t",
+                Delimiter = ",",
                 HasHeaderRecord = false
             };
 
