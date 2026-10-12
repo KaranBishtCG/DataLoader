@@ -1,4 +1,5 @@
-﻿using DataLoaderAPI.Models;
+﻿
+using DataLoaderAPI.Models;
 using DataLoaderAPI.Repositories.Interfaces;
 using DataLoaderAPI.Services.Interfaces;
 
@@ -8,18 +9,23 @@ namespace DataLoaderAPI.Services
     {
         private readonly IWorkItemRepository _workItemRepository;
 
-        public WorkItemService(IWorkItemRepository workItemRepository)
+        public WorkItemService(
+            IWorkItemRepository workItemRepository)
         {
             _workItemRepository = workItemRepository;
         }
 
         public async Task<PagedResult<WorkItem>> GetAllWorkItemsAsync(
-        int page,
-        int pageSize)
+            int page,
+            int pageSize,
+            string? brandCode,
+            string? brandName)
         {
             return await _workItemRepository.GetAllWorkItemsAsync(
                 page,
-                pageSize);
+                pageSize,
+                brandCode,
+                brandName);
         }
     }
 }

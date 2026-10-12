@@ -22,7 +22,9 @@ namespace DataLoaderAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllWorkItemsAsync(
             [FromQuery] int page = 1,
-            [FromQuery] int pageSize = 200)
+            [FromQuery] int pageSize = 200,
+            [FromQuery] string? brandCode = null,
+            [FromQuery] string? brandName = null)
         {
             if (page < 1)
             {
@@ -31,13 +33,14 @@ namespace DataLoaderAPI.Controllers
 
             if (pageSize < 1)
             {
-                return BadRequest(
-                    "Page size must be greater than 0.");
+                return BadRequest("Page size must be greater than 0.");
             }
 
             var result = await _workItemService.GetAllWorkItemsAsync(
                 page,
-                pageSize);
+                pageSize,
+                brandCode,
+                brandName);
 
             using var memoryStream = new MemoryStream();
 
@@ -51,24 +54,15 @@ namespace DataLoaderAPI.Controllers
                 memoryStream,
                 Encoding.UTF8,
                 leaveOpen: true))
-            using (var csv = new CsvWriter(
-                writer,
-                csvConfig))
+            using (var csv = new CsvWriter(writer, csvConfig))
             {
                 csv.Context.RegisterClassMap<WorkItemMap>();
-
                 await csv.WriteRecordsAsync(result.Items);
             }
 
-            Response.Headers["X-Page"] =
-                result.Page.ToString();
-
-            Response.Headers["X-Page-Size"] =
-                result.PageSize.ToString();
-
-            Response.Headers["X-Total-Count"] =
-                result.TotalCount.ToString();
-
+            Response.Headers["X-Page"] = result.Page.ToString();
+            Response.Headers["X-Page-Size"] = result.PageSize.ToString();
+            Response.Headers["X-Total-Count"] = result.TotalCount.ToString();
             Response.Headers["X-Has-More"] =
                 result.HasMore.ToString().ToLowerInvariant();
 
@@ -79,5 +73,6 @@ namespace DataLoaderAPI.Controllers
                 "text/csv",
                 $"work-items-page-{page}.csv");
         }
+
     }
 }
