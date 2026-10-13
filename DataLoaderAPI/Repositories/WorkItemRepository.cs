@@ -24,13 +24,18 @@ namespace DataLoaderAPI.Repositories
         }
 
 
-        public async Task<PagedResult<WorkItem>> GetAllWorkItemsAsync(int page,int pageSize)
+        public Task<PagedResult<WorkItem>> GetAllWorkItemsAsync(
+            int page,
+            int pageSize,
+            string? brandCode,
+            string? brandName)
         {
-            if(!File.Exists(_filepath))
+            if (!File.Exists(_filepath))
             {
-                throw new FileNotFoundException($"The file {_filepath} does not exist.");
-            }   
-            
+                throw new FileNotFoundException(
+                    $"The file {_filepath} does not exist.");
+            }
+
             using var reader = new StreamReader(_filepath);
 
             var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
@@ -45,20 +50,100 @@ namespace DataLoaderAPI.Repositories
 
             var records = csv.GetRecords<WorkItem>().ToList();
 
+            // Filter by Brand Code.
+            if (!string.IsNullOrWhiteSpace(brandCode))
+            {
+                records = records
+                    .Where(x => string.Equals(
+                        x.BrandCode?.Trim(),
+                        brandCode.Trim(),
+                        StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+            // Filter by Brand Name.
+            if (!string.IsNullOrWhiteSpace(brandName))
+            {
+                records = records
+                    .Where(x => x.BrandName != null &&
+                        x.BrandName.Contains(
+                            brandName.Trim(),
+                            StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+            // Count records after applying filters.
             var totalCount = records.Count;
 
-            var items = records.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+            var items = records
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
 
             var hasMore = page * pageSize < totalCount;
 
-            return new PagedResult<WorkItem>
+            return Task.FromResult(new PagedResult<WorkItem>
             {
                 Items = items,
                 TotalCount = totalCount,
                 Page = page,
                 PageSize = pageSize,
                 HasMore = hasMore
-            };
+            });
         }
+
+        
+        public Task<PagedResult<WorkItem>> GetByAccountNumbersAsync(
+            List<string> accountNumbers,
+            int page,
+            int pageSize)
+        {
+            if (!File.Exists(_filepath))
+            {
+                throw new FileNotFoundException(
+                    $"The file {_filepath} does not exist.");
+            }
+
+            using var reader = new StreamReader(_filepath);
+
+            var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                Delimiter = "\t",
+                HasHeaderRecord = false
+            };
+
+            using var csv = new CsvReader(reader, csvConfig);
+
+            csv.Context.RegisterClassMap<WorkItemMap>();
+
+            var requestedNumbers = new HashSet<string>(
+                accountNumbers
+                    .Where(x => !string.IsNullOrWhiteSpace(x))
+                    .Select(x => x.Trim()),
+                StringComparer.OrdinalIgnoreCase);
+
+            var records = csv.GetRecords<WorkItem>()
+                .Where(x => requestedNumbers.Contains(x.AccountNumber.Trim()))
+                .ToList();
+
+            var totalCount = records.Count;
+
+            var items = records
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var hasMore = page * pageSize < totalCount;
+
+            return Task.FromResult(new PagedResult<WorkItem>
+            {
+                Items = items,
+                TotalCount = totalCount,
+                Page = page,
+                PageSize = pageSize,
+                HasMore = hasMore
+            });
+        }
+
     }
 }
