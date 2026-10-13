@@ -27,5 +27,17 @@ namespace DataLoaderAPI.Services
                 brandCode,
                 brandName);
         }
+
+        
+        public async Task<PagedResult<WorkItem>> GetByAccountNumbersAsync(
+            List<string> accountNumbers,
+            int page,
+            int pageSize)
+        {
+            return await _workItemRepository.GetByAccountNumbersAsync(
+                accountNumbers,
+                page,
+                pageSize);
+        }
     }
 }
